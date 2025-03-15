@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-06</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      .social-icon:hover {
+        color: #3b5998; /* Facebook color */
+      }
+
+      .social-icon.youtube:hover {
+        color: #ff0000; /* YouTube color */
+      }
+
+      .social-icon.instagram:hover {
+        color: #c13584; /* Instagram color */
+      }
+    </style>
+  </head>
+
+  <body class="">
+    <!-- navbar -->
+    <div class="navbar bg-base-100 px-10 shadow-sm">
+      <div class="navbar-start">
+        <div class="flex items-center">
+          <h3 class="">English</h3>
+          <img src="./assets/logo.png" alt="" srcset="" />
+          <h3>জানালা</h3>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <button class="btn btn-outline btn-primary mx-2 icon">
+          <img src="./assets/fa-circle-question.png" alt="" />FAQ
+        </button>
+        <button class="btn btn-outline btn-primary mx-2 icon">
+          <i class="fa-solid fa-book-open icon" style="color: #422ad5"></i>Learn
+        </button>
+        <button class="btn btn-outline btn-primary mx-2 icon">
+          <img src="./assets/fa-arrow-right-from-bracket.png" alt="" />Logout
+        </button>
+      </div>
+    </div>
+
+    <!-- hero Section -->
+    <section class="w-full px-10 mt-20">
+      <div
+        class="flex-col flex justify-between items-center justi lg:flex-row-reverse"
+      >
+        <img src="./assets/hero-student.png" class="max-w-sm" />
+        <div>
+          <h1 class="text-5xl font-bold">
+            <span class="text-[#00BCFF]">English</span> is Easy!!
+          </h1>
+          <p class="py-6">
+            আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+            <br />
+            আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
+            <br />যাবে অন্য একটি Level এ
+          </p>
+          <div class="">
+            <div class="card-body px-0">
+              <input type="email" class="input" placeholder="Enter Your Name" />
+              <input
+                type="Password"
+                class="input"
+                placeholder="Password is  123456"
+              />
+            </div>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vocabularies Section -->
+    <section></section>
+
+    <!-- FAQ Section-->
+    <section class="mb-60 ">
+      <h1 class="text-5xl px-10 font-bold flex justify-center mb-20">
+        <span class="text-[#00BCFF]">Frequently &nbsp</span>Asked Questions
+      </h1>
+      <div class="px-10">
+        <div>
+          <div>
+            <div
+              class="collapse collapse-plus bg-[#F8F8F8] border my-2 px-0 w-full rounded-lg border-0"
+            >
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title font-semibold">
+                1. How can I start learning English on this website?
+              </div>
+              <div class="collapse-content text-sm">
+                You can start by exploring our beginner lessons, interactive
+                exercises, and quizzes. We also offer structured courses to
+                guide you step by step.
+              </div>
+            </div>
+            <div
+              class="collapse collapse-plus bg-[#F8F8F8] border my-2 w-full rounded-lg border-0"
+            >
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title font-semibold">
+                2. Is this website free to use?
+              </div>
+              <div class="collapse-content text-sm">
+                Yes , it is totaly free for everyone
+              </div>
+            </div>
+            <div
+              class="collapse collapse-plus bg-[#F8F8F8] border my-2 w-full rounded-lg border-0"
+            >
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title font-semibold">
+                3. Do I need to create an account?
+              </div>
+              <div class="collapse-content text-sm">
+                Yes you have to creat an account
+              </div>
+            </div>
+            <div
+              class="collapse collapse-plus bg-[#F8F8F8] border my-2 w-full rounded-lg border-0"
+            >
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title font-semibold">
+                4. How can I build my English vocabulary?
+              </div>
+              <div class="collapse-content text-sm">
+                Build your vocabulary by reading, practicing new words, using
+                flashcards, watching English content, and engaging in
+                conversations.
+              </div>
+            </div>
+            <div
+              class="collapse collapse-plus bg-[#F8F8F8] border my-2 w-full rounded-lg border-0"
+            >
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title font-semibold">
+                5. Do you offer certificates for completed courses?
+              </div>
+              <div class="collapse-content text-sm">Yes, we do</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div
+      style="width: 100%; height: 2px; background-color:rgb(241, 194, 106); margin: 20px 0"
+    ></div>
+    <footer class="py-20 px-10">
+      <div class="flex flex-row justify-between">
+        <div class="">
+          <h3 class="flex items-center class pb-2">
+            English<img src="./assets/logo.png" alt="" srcset="" />জানালা
+          </h3>
+          <h3 class="py-2">ইংরেজি শিখুন সহজে</h3>
+          <p>Providing ED-Tech Applications since 2025</p>
+        </div>
+        <div>
+          <p class="pl-2">Follow us</p>
+          <div class="social-icons mb-0">
+            <a href="" class="social-icon facebook pl-2"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="" class="social-icon youtube pl-2"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="" class="social-icon instagram pl-2"
+              ><i class="fab fa-instagram max-w-sm"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
