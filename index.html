@@ -16,22 +16,25 @@
     />
     <style>
       .social-icon:hover {
-        color: #3b5998; /* Facebook color */
+        color: #3b5998;
       }
 
       .social-icon.youtube:hover {
-        color: #ff0000; /* YouTube color */
+        color: #ff0000;
       }
 
       .social-icon.instagram:hover {
-        color: #c13584; /* Instagram color */
+        color: #c13584;
+      }
+      .nav-icon:hover {
+        color: white;
       }
     </style>
   </head>
 
   <body class="">
     <!-- navbar -->
-    <div class="navbar bg-base-100 px-10 shadow-sm">
+    <div id="nav" class="navbar bg-base-100 px-10 shadow-sm">
       <div class="navbar-start">
         <div class="flex items-center">
           <h3 class="">English</h3>
@@ -41,20 +44,20 @@
       </div>
 
       <div class="navbar-end">
-        <button class="btn btn-outline btn-primary mx-2 icon">
-          <img src="./assets/fa-circle-question.png" alt="" />FAQ
+        <button id="faqButton" class="btn btn-outline btn-primary mx-2 nav-icon">
+          <i class="fa-solid fa-question"></i>FAQ
         </button>
-        <button class="btn btn-outline btn-primary mx-2 icon">
-          <i class="fa-solid fa-book-open icon" style="color: #422ad5"></i>Learn
+        <button id="learnbtn" class="btn btn-outline btn-primary mx-2 nav-icon">
+          <i class="fa-solid fa-book-open"></i>Learn
         </button>
-        <button class="btn btn-outline btn-primary mx-2 icon">
-          <img src="./assets/fa-arrow-right-from-bracket.png" alt="" />Logout
+        <button id="log-out" class="btn btn-outline btn-primary mx-2 nav-icon">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>Logout
         </button>
       </div>
     </div>
 
     <!-- hero Section -->
-    <section class="w-full px-10 mt-20">
+    <section id="hero" class="w-full px-10 mt-20">
       <div
         class="flex-col flex justify-between items-center justi lg:flex-row-reverse"
       >
@@ -63,32 +66,39 @@
           <h1 class="text-5xl font-bold">
             <span class="text-[#00BCFF]">English</span> is Easy!!
           </h1>
-          <p class="py-6">
+          <p class="mt-10 text-md font-medium">
             আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
             <br />
             আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
             <br />যাবে অন্য একটি Level এ
           </p>
-          <div class="">
+          <div class="mt-0">
             <div class="card-body px-0">
-              <input type="email" class="input" placeholder="Enter Your Name" />
-              <input
-                type="Password"
-                class="input"
-                placeholder="Password is  123456"
-              />
+              <input id="username" type="text" class="input" value="arib" placeholder="Enter Your Name" />
+              <input id="pin" type="number" class="input" value="123456" placeholder="Password is  (123456)"/>
             </div>
-            <button class="btn btn-primary">Get Started</button>
+            <button id="getStart-btn" class="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Vocabularies Section -->
-    <section></section>
+    <section id="learnarea" class="flex flex-col justify-center mt-10">
+      <h1 class="text-3xl px-10 font-bold flex justify-center mb-20">
+        <span class="text-[#00BCFF]">Let's &nbsp</span> Learn Vocabularies
+      </h1>
+      <div id="category-container" class="flex justify-center mb-10">
+        
+      </div>
+      <div class="px-auto py-20 flex flex-col items-center justify-center bg-[#F8F8F8]">
+        <p class="text-[#79716B]">আপনি এখনো কোন Lesson Select করেন ন</p>
+        <h1 class="text-3xl font-bold p-3.5 ">একটি Lesson Select করুন।</h1>
+      </div>
+    </section>
 
     <!-- FAQ Section-->
-    <section class="mb-60 ">
+    <section id="faq" class="mb-60 mt-52">
       <h1 class="text-5xl px-10 font-bold flex justify-center mb-20">
         <span class="text-[#00BCFF]">Frequently &nbsp</span>Asked Questions
       </h1>
@@ -158,10 +168,16 @@
     </section>
 
     <!-- Footer -->
-    <div
-      style="width: 100%; height: 2px; background-color:rgb(241, 194, 106); margin: 20px 0"
+    <footer id="footer">
+      <div
+      style="
+        width: 100%;
+        height: 2px;
+        background-color: rgb(241, 194, 106);
+        margin: 20px 0;
+      "
     ></div>
-    <footer class="py-20 px-10">
+    <div class="py-20 px-10">
       <div class="flex flex-row justify-between">
         <div class="">
           <h3 class="flex items-center class pb-2">
@@ -185,6 +201,9 @@
           </div>
         </div>
       </div>
+    </div>
     </footer>
+    <script src="./script/index.js"></script>
+    <script src="./script/login.js"></script>
   </body>
 </html>
