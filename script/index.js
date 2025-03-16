@@ -56,6 +56,3 @@ logOutBtn.addEventListener("click", function (event) {
   faqSection.style.display = "none";
   vocabulary.style.display = "none";
 });
-
-
-
